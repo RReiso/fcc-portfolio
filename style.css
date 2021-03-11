@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&family=Catamaran:wght@300&display=swap');
+
 html {
 	scroll-behavior: smooth;
 	box-sizing: border-box;
@@ -18,6 +20,8 @@ html {
 
 body {
 	position: relative;
+  font-family: Catamaran;
+  font-size:1.25rem;
 
 }
 
@@ -30,28 +34,47 @@ body {
 	overflow: hidden;
 }
 
+
 h1{
-  color:var(--color-white);
-  text-align: center;
-  font-size: 2rem;
-  padding-top:5rem;
+  font-size: 2.25rem;
 }
 #welcome-section{
+  position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url(./images/mosaic.jpg) ;
+  background-image: url(./images/mosaic-757270_1920.jpg) ;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+.welcome-text{
+  padding: 1rem 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: #5099bd;
+  /* height: auto; */
+  text-align: center;
+  /* margin-top:40vh; */
+  color:var(--color-white);
   
 }
+#welcome-section p{
+  padding: 0 1rem;
+  
+  font-size: 1.5rem;
+  
+}
+
 .nav-line{
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  width: 100vw;
   height: 3rem;
   display: flex;
   align-items: center;
@@ -108,17 +131,11 @@ h1{
     flex-direction: column;
     
 }
-@media (min-width:768px){
 
-  .contact-links{
-    position:fixed;
-    right:0;
-    top:40%;
-  }
-}
+
 
 .contact-links i{
-  margin: 0.5rem;
+  margin: 0.25rem 1rem;
   padding:0.5rem;
   color:var(--color-white);
   background-color: var(--color-black-text);
@@ -128,18 +145,110 @@ h1{
 }
 
 .contact-links i:hover{
-  margin: 0.5rem;
-  padding:0.5rem;
+ 
   color:var(--color-black-text);
   background-color: var(--color-white);
   border: 2px solid var(--color-black-text);
-  border-radius: 3px;
-  font-size: 1.5rem;
+  
 }
 
-/* img{
-  width: 80vw;
-} */
+
+h2{
+  padding: 4rem 0 2.5rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+#about{
+  display:flex;
+  flex-direction: column;
+}
+
+.project-container{
+  padding: 0.5rem 1rem;
+  display:flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.project{
+  /* display: flex; */
+  margin: 1rem 0.5rem;
+   display: flex;
+  flex-direction: column;
+  position:relative;
+  overflow:hidden;
+  
+}
+
+@media (min-width:481px){
+  .project{
+  /* max-width: 22rem; */
+  margin: 2rem;
+}
+}
+
+@media (min-width:700px){
+section:not(#welcome-section){
+  margin-right: 4rem;
+}
+
+
+  .contact-links{
+    position:fixed;
+    right:0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.contact-links i{
+  margin: 0.25rem 0;
+}
+
+  .project-container{
+  padding: 0.5rem 1rem;
+  display:flex;
+  flex-direction: row;
+  justify-content:space-evenly ;
+  flex-wrap: wrap;
+
+  /* align-items: center; */
+}
+
+}
+@media (min-width:769px){
+  .project{
+  max-width: 18rem;
+  margin: 2rem 1rem;
+}
+}
+
+
+.project-image{
+ 
+  /* min-width: 10rem; */
+  /* max-width: 20rem; */
+  border-radius: 2px;
+  cursor: pointer
+}
+.project-link{
+  display:flex;
+  position:absolute;
+  top:-100%;
+  width:100%;
+  height:100%;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  opacity: 0.8;
+  transition: 0.4s;
+  border-radius: 2px;
+ 
+  /* z-index: 10; */
+}
+
+.project:hover .project-link{
+  top:0;
+}
 
 .contact-container{
   display:flex;
@@ -156,44 +265,4 @@ h1{
   background-repeat: no-repeat;
   /* background-color: aqua; */
   /* z-index: 1000; */
-}
-
-.project-container{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.project{
-  margin:0.5rem;
-  position:relative;
-  overflow:hidden;
-  
-}
-
-.project-image{
-  /* display:none; */
-  /* margin:1rem; */
-  max-width: 30rem;
-  border-radius: 2px;
-  cursor: pointer
-}
-.project-link{
-  display:flex;
-  position:absolute;
-  top:-100%;
-  width:100%;
-  height:99%;
-  justify-content: center;
-  align-items: center;
-  background-color: aqua;
-  opacity: 0.8;
-  transition: 0.4s;
-  border-radius: 2px;
- 
-  /* z-index: 10; */
-}
-
-.project:hover .project-link{
-  top:0;
 }
