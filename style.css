@@ -45,7 +45,7 @@ h1{
 }
 
 .blue-bg{
-  background-color: #f7f9fb;
+  background-color: #f5f4e3;
 }
 
 
@@ -94,6 +94,8 @@ section{
   display: flex;
   align-items: center;
   background-color: var(--color-dark-blue);
+ -webkit-box-shadow: 0px 4px 10px -3px rgba(0,0,0,0.54); 
+box-shadow: 0px 4px 10px -3px rgba(0,0,0,0.54);
   z-index: 100;
 }
 #ham{
@@ -111,7 +113,7 @@ section{
   background: var(--color-dark-blue);
   width: 100vw;
   height: fit-content;
-  overflow: hidden;
+  /* overflow: visible; */
   color: var(--color-white);
   /* hide the menu above the screen by default */
   transform: translateY(-130%);
@@ -131,9 +133,7 @@ section{
   align-items: center;
   padding: 0 0 0.75rem 0;
 }
-.nav-link{
-  margin:0.5rem;
-}
+
 .nav-link a{
   display: block;           
 
@@ -336,17 +336,19 @@ padding-right: 3rem;
 
 .flex-contact{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  padding: 2rem 0;
+  padding: 5rem 0 2rem;
 }
-/* .flex-contact >*{
-  padding: 0 2rem;
-} */
+.contact-title{
+  padding-right: 5rem;
+  /* padding-bottom: 0.5rem; */
+}
 
-.arrow{
-  transform: rotate(-25deg);
+.contact-title h2{
+  padding:0;
 }
+
 
   .contact-links{
     position:fixed;
@@ -378,4 +380,18 @@ padding-right: 3rem;
 }
 
 
+@media (min-width:700px) and (min-height:500px){
+  .arrow{
+  transform: rotate(-15deg);
+} 
+}
+@media (min-width:700px) and (min-height:700px){
+  .contact-links{
+    top: calc(100vh - 240px);
+  }
+.arrow{
+  transform: rotate(0deg);
+}
+  
+}
 
