@@ -207,7 +207,7 @@ h2 {
 	cursor: pointer;
 }
 
-.project-link {
+.project-title {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -226,8 +226,8 @@ h2 {
 	transition: 0.3s;
 }
 
-.project:hover .project-link,
-.project-link:focus {
+.project:hover .project-title,
+.project-title:focus {
 	top: 0;
 }
 
@@ -289,15 +289,14 @@ footer p {
 /* || MEDIA */
 
 @media (min-width: 30em) {
-
-  /* || GENERAL STYLES */
+	/* || GENERAL STYLES */
 
 	section {
 		padding-right: 2.5rem;
 		padding-left: 2.5rem;
 	}
 
-/* || PROJECTS SECTION */
+	/* || PROJECTS SECTION */
 
 	.project {
 		margin: 2rem;
@@ -305,14 +304,13 @@ footer p {
 }
 
 @media (min-width: 43.75em) {
-
-  /* || UTILITIES */
+	/* || UTILITIES */
 
 	.margin {
 		margin-right: 4rem;
 	}
 
-  /* || NAVIAGTION */
+	/* || NAVIAGTION */
 
 	.nav-line {
 		display: none;
@@ -339,28 +337,28 @@ footer p {
 		margin: 0 1rem;
 	}
 
-/* || ABOUT SECTION */
+	/* || ABOUT SECTION */
 
 	#about {
 		padding: 0.5rem 5rem 2rem;
 	}
 
 	.skills {
-    justify-content: flex-start;
+		justify-content: flex-start;
 	}
-  
-/* || PROJECTS SECTION */
 
-  .project-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 0.5rem 1rem;
-  }
+	/* || PROJECTS SECTION */
 
-/* || CONTACT SECTION */
-  
+	.project-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		padding: 0.5rem 1rem;
+	}
+
+	/* || CONTACT SECTION */
+
 	.flex-contact {
 		display: flex;
 		justify-content: center;
@@ -386,12 +384,10 @@ footer p {
 	.contact-links i {
 		margin: 0.25rem 1rem;
 	}
-
 }
 
 @media (min-width: 48em) {
-
-/* || PROJECTS SECTION */
+	/* || PROJECTS SECTION */
 
 	.project {
 		max-width: 22rem;
@@ -400,8 +396,7 @@ footer p {
 }
 
 @media (min-width: 43.75em) and (min-height: 31.25em) {
-
-/* || CONTACT SECTION */
+	/* || CONTACT SECTION */
 
 	.arrow {
 		transform: rotate(-15deg);
@@ -409,8 +404,7 @@ footer p {
 }
 
 @media (min-width: 43.75em) and (min-height: 43.75em) {
-
-/* || CONTACT SECTION */
+	/* || CONTACT SECTION */
 
 	.contact-links {
 		top: calc(100vh - 15rem);
