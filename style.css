@@ -191,6 +191,7 @@ h2 {
 	padding: 0.5rem 0;
 	display: flex;
 	flex-direction: column;
+	height: auto;
 }
 
 .project-tile {
@@ -391,6 +392,7 @@ footer p {
 
 	.project-tile {
 		max-width: 22rem;
+		height: auto;
 		margin: 2rem 1rem;
 	}
 }
