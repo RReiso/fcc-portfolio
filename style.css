@@ -193,7 +193,7 @@ h2 {
 	flex-direction: column;
 }
 
-.project {
+.project-tile {
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -207,7 +207,7 @@ h2 {
 	cursor: pointer;
 }
 
-.project-title {
+.project-link {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -226,8 +226,8 @@ h2 {
 	transition: 0.3s;
 }
 
-.project:hover .project-title,
-.project-title:focus {
+.project-tile:hover .project-link,
+.project-link:focus {
 	top: 0;
 }
 
@@ -298,7 +298,7 @@ footer p {
 
 	/* || PROJECTS SECTION */
 
-	.project {
+	.project-tile {
 		margin: 2rem;
 	}
 }
@@ -389,7 +389,7 @@ footer p {
 @media (min-width: 48em) {
 	/* || PROJECTS SECTION */
 
-	.project {
+	.project-tile {
 		max-width: 22rem;
 		margin: 2rem 1rem;
 	}
