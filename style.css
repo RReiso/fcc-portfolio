@@ -201,11 +201,17 @@ h2 {
 	flex-direction: column;
 }
 
+#projects p {
+	padding: 0.5rem;
+	color: var(--color-white);
+	text-align: center;
+	line-height: 1;
+}
 .project-tile {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	margin: 1rem 0.25rem;
+	margin: 0 0.25rem 1rem;
 	overflow: hidden;
 }
 
@@ -307,7 +313,7 @@ footer p {
 	/* || PROJECTS SECTION */
 
 	.project-tile {
-		margin: 2rem;
+		margin: 0 2rem 2rem;
 	}
 }
 
@@ -346,10 +352,10 @@ footer p {
 		margin: 0 1rem;
 	}
 
-  .nav-link a:hover,
-.nav-link a:focus {
-	color: #373f42;
-}
+	.nav-link a:hover,
+	.nav-link a:focus {
+		color: #373f42;
+	}
 
 	/* || ABOUT SECTION */
 
@@ -405,7 +411,7 @@ footer p {
 
 	.project-tile {
 		max-width: 22rem;
-		margin: 2rem 1rem;
+		margin: 0 1rem 2rem;
 	}
 }
 
