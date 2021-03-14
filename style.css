@@ -188,10 +188,9 @@ h2 {
 /* || PROJECTS SECTION */
 
 .project-container {
-	padding: 0.5rem 0;
 	display: flex;
+	padding: 0.5rem 0;
 	flex-direction: column;
-	height: fit-content;
 }
 
 .project-tile {
@@ -204,6 +203,8 @@ h2 {
 }
 
 .project-image {
+  width:100%;
+  height:auto;
 	border-radius: 2px;
 	cursor: pointer;
   height: fit-content;
