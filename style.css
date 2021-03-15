@@ -241,7 +241,8 @@ h2 {
 	transition: 0.3s;
 }
 
-.project-tile:hover .project-link {
+.project-tile:hover .project-link,
+.project-link:focus {
 	top: 0;
 }
 
