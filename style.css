@@ -305,13 +305,8 @@ h2 {
 	background-color: var(--color-white);
 }
 
-.link:focus {
+.link:focus-visible {
 	outline: 3px solid rgb(197, 124, 247);
-}
-
-.link:active,
-.link:visited {
-	outline: none !important;
 }
 
 /* || FOOTER */
